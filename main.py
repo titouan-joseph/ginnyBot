@@ -11,8 +11,6 @@ bot = commands.Bot(command_prefix=PREFIX, description="Bot de l'ASTUS")
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Game(name="Help"))
-
     print(f'{bot.user} has connected to Discord!')
 
 
