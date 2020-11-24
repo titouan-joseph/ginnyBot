@@ -1,0 +1,1 @@
+from .ginny import CogGinny
