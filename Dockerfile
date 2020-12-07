@@ -7,8 +7,6 @@ RUN apt-get update \
     && apt-get upgrade gcc -y \
     && pip install --upgrade pip\
     && pip install -r requirements.txt\
-    && rm requirements.txt\
-    && mkdir -p ./cogs/calendar/Assets\
-    && mkdir -p ./cogs/tgg
+    && rm requirements.txt
 
 CMD ["python", "main.py"]
